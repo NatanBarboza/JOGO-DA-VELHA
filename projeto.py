@@ -1,11 +1,11 @@
 from modulos import ganha, mostrar                                         #funções importadas 
     
 jogo = [0, 1, 2, 3, 4, 5, 6, 7, 8]                                         #definição da quantidade de espaços
-max_rodadas = 5                                                            #definição do máximo de rodadas
+max_rodadas = 4                                                            #definição do máximo de rodadas
 vez_jogada = 1                                                             #definição do número de tentativas
 
 
-for jogo_completo in range(0, max_rodadas):                                #laço para controle de rodadas
+for jogo_completo in range(0, max_rodadas + 1):                                #laço para controle de rodadas
     for jogada in range(vez_jogada):                                       #laço para controle de tentativa
         mostrar(jogo)
         print('Vez do jogador 1:')
